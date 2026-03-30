@@ -1,0 +1,14 @@
+## Interface: 120001
+## Title: Peavy Group Util
+## Notes: Group utility buttons for ready checks and pull timers
+## Author: Peavy
+## Version: 1.0.0
+## SavedVariables: PeavyGroupUtilDB
+
+PeavyGroupUtil_Core.lua
+PeavyGroupUtil_Widgets.lua
+PeavyGroupUtil_PartyActions.lua
+PeavyGroupUtil_MainPanel.lua
+PeavyGroupUtil_OptionsPanel.lua
+PeavyGroupUtil_Events.lua
+
