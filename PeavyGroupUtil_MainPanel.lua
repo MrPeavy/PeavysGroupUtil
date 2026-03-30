@@ -91,7 +91,14 @@ function addon.MainPanel.UpdatePanelVisibility()
     local inGroup = IsInGroup() or IsInRaid()
     local db = addon.GetDB()
 
-    if inGroup and not db.panelHidden then
+    -- Only show the panel when the player both:
+    -- 1) is grouped
+    -- 2) has permission to use the functionality (leader/assistant)
+    local canUse =
+        addon.PartyActions.CanDoReadyCheck() and
+        addon.PartyActions.CanStartCountdown()
+
+    if inGroup and canUse and not db.panelHidden then
         frame:Show()
     else
         frame:Hide()

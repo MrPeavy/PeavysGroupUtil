@@ -1,14 +1,25 @@
 # Peavy Group Util
 
-Minimal World of Warcraft addon scaffold.
+Peavy Group Util is a lightweight WoW Retail addon that provides quick access to:
+- Ready Check
+- Pull Timer
+- Cancel Pull Timer
 
-Installation
-- Copy the `PeavysGroupUtil` folder into your World of Warcraft `_retail_/Interface/AddOns/` directory.
-- Enable the addon in the AddOn list in-game.
+## Installation
+- Copy the `PeavysGroupUtil` folder into `World of Warcraft/_retail_/Interface/AddOns/`.
+- Enable the addon from the in-game AddOns list.
 
-Files
-- `PeavysGroupUtil.toc` — Addon manifest
-- `PeavyGroupUtil.lua` — Addon implementation
+## Usage
+- Use `/pgu` to open the options panel.
+- The main panel appears when you are in a party or raid (unless hidden in options).
+- Pull Timer:
+  - Left-click: starts your configured duration.
+  - Right-click: starts a 10-second countdown.
+- Buttons are enabled/disabled automatically based on your group permissions.
 
-Development
-- Edit the Lua files and reload the UI with `/reload` in-game.
+## Options
+- Show/Hide panel preference
+- Pull timer duration (1-60 sec)
+- Lock panel position
+- Panel opacity
+- Hide panel border
